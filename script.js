@@ -28,3 +28,10 @@ const getCart=()=>{
     }
     return cartObj;
 }
+
+const addProductToCart=(item )=>{
+    const cart = getCart()
+    cart[item]=1;
+    const cartStringified=JSON.stringify(cart);
+    localStorage.setItem('cart',cartStringified)
+}
