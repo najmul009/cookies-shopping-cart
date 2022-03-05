@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coockies Shopping Cart</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Shopping</h1>
+    <input id="item-name" type="text"> <button onclick="addItem()">add to Cart</button>
+    <br>
+    <ul id="products-list">
+
+    </ul>
+
+    <br>
+    <button onclick="orderItems()">Place Order</button>
+    <script src="script.js"></script>
+
 </body>
 </html>
