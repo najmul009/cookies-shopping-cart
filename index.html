@@ -11,11 +11,15 @@
             margin-top: 50px;
             font-weight: 700;
         }
+        div{
+            margin-left: 40%;
+        }
     </style>
 </head>
 <body>
     <h1>Shopping</h1>
-    <input id="item-name" type="text"> <button onclick="addItem()">add to Cart</button>
+    <div>
+        <input id="item-name" type="text"> <button onclick="addItem()">add to Cart</button>
     <br>
     <ul id="products-list">
 
@@ -23,6 +27,7 @@
 
     <br>
     <button onclick="orderItems()">Place Order</button>
+    </div>
     <script src="script.js"></script>
 
 </body>
