@@ -1,6 +1,11 @@
 const addItem = ()=>{
     const itemField = document.getElementById('item-name')
     const item = itemField.value ;
+
+    //input error handeling
+    if (!item) {
+        return;
+    }
     // display in the ui
     displayProduct(item);
 
